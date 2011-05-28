@@ -1,0 +1,10 @@
+Creates a cache of html files from url requests. If it receives a url it already has downloaded, will return the locally cached file. Handy for scraping websites.
+
+USAGE:
+you first initialize the cache with a path to a folder to store the responses
+
+rc = RequestCache.new("caches/patent_pages")
+
+Then you initiate a response with
+rc.get("http://www.shancarter.com")
+
